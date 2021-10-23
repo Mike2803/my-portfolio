@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 0px;
+    background-color: black;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: cornflowerblue;
+    background-position: left;
+    color: black;
+    border: 7px solid cornflowerblue;
+    border-left: 50px solid cornflowerblue; 
+}
+
+header a {
+    color: cornflowerblue;
+    text-decoration: none;
+    border-bottom: cornflowerblue 3px solid;
+}
+
+header nav {
+    padding: 0 15px;
+    margin: 7px;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.intro {
+    background-image: url("../images/intro.jpg");
+    height: 200px;
+}
+
+.intro h1 {
+    display: inline-block;
+    color: cornflowerblue;
+    background-color: black;
+    position: absolute;
+    left: 800px;
+    margin-top: 150px;
+    border: 5px solid black;
+}
+
+.about-me {
+    height: 100px; 
+    padding: 20px;
+}
+
+.about-me h2 {
+    color: navy;
+    float: left;
+    margin-right: 25px;
+    border-right: 3px solid navy;
+    padding: 0 9px 0px 0px;
+    height: 50px;
+}
+
+.about-me p {
+    color: navy;
+}
+
+.my-work {
+    height: 800px;
+    padding: 20px;
+    display: flex;
+}
+ 
+.my-work h2 {
+    color: navy;
+    float: left;
+    margin-right: 25px;
+    border-right: 3px solid navy;
+    padding: 0 30px;
+    height: 700px;
+}
+
+.img-1 {
+    background-image: url("../images/run-buddy.jpg");
+    display: inline-block;
+    background-size: 700px;
+    height: 700px; 
+    width: 50%;
+    border: 3px solid cornflowerblue;
+    margin-right: 20px;
+}
+
+.p-1 {
+    display: inline-block;
+    background-color: cornflowerblue;
+    border: 7px solid cornflowerblue;
+    border-left: 20px solid cornflowerblue;
+    position: relative; 
+    top: 600px;
+}
+
+.img-2 {
+    background-image: url("../images/horiseon.png");
+    display: inline-block;
+    background-size: 700px;
+    height: 700px; 
+    width: 50%;
+    border: 3px solid cornflowerblue;
+}
+
+.p-2 {
+    display: inline-block;
+    background-color: cornflowerblue;
+    border: 7px solid cornflowerblue;
+    border-left: 20px solid cornflowerblue;
+    position: relative; 
+    top: 600px;
+} 
+
+footer {
+    background-color: black;
+    color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+footer h2 {
+    display: inline-block;
+    border-right: 3px solid cornflowerblue;
+    margin-top: 30px;
+    height: 35px;
+    padding: 3px 7px;
+}
+
+footer p {
+    display: inline-block;
+    border-bottom: 3px solid cornflowerblue;
+    margin-top: 30px;
+    margin-left: 100px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+footer a {
+    display: inline-block;
+    color: cornflowerblue;
+    border-bottom: 3px solid cornflowerblue;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 300px;
+    height: 30px;
+    padding-top: 5px;
+}
