@@ -12,6 +12,16 @@ body {
 header {
     padding: 20px 0px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    background-attachment: fixed;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header h1 {
@@ -44,29 +54,43 @@ header nav ul li {
     margin-left: 35px;
 }
 
+header nav ul li a:hover {
+    background-color: cornflowerblue;
+    color: black;
+    border-radius: 5px;
+}
+
 .intro {
     background-image: url("../images/intro.jpg");
-    height: 200px;
+    height: 300px;
+    display: flex;
+    background-size: auto;
+    background-position: 80%;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    top: 0;
 }
 
 .intro h1 {
-    display: inline-block;
     color: cornflowerblue;
     background-color: black;
-    position: absolute;
-    left: 800px;
-    margin-top: 150px;
+    display: flex;
+    margin-left: 800px;
+    margin-top: 250px;
+    margin-bottom: 10px;
     border: 5px solid black;
 }
 
 .about-me {
+    display: flex;
+    flex-wrap: wrap;
     height: 100px; 
     padding: 20px;
 }
 
 .about-me h2 {
+    display: flex;
     color: navy;
-    float: left;
     margin-right: 25px;
     border-right: 3px solid navy;
     padding: 0 9px 0px 0px;
@@ -75,6 +99,9 @@ header nav ul li {
 
 .about-me p {
     color: navy;
+    position: absolute;
+    left: 150px;
+    top: 1;
 }
 
 .my-work {
@@ -102,6 +129,7 @@ header nav ul li {
     margin-right: 20px;
 }
 
+
 .p-1 {
     display: inline-block;
     background-color: cornflowerblue;
@@ -120,6 +148,8 @@ header nav ul li {
     border: 3px solid cornflowerblue;
 }
 
+
+
 .p-2 {
     display: inline-block;
     background-color: cornflowerblue;
@@ -135,27 +165,29 @@ footer {
     display: flex;
     flex-wrap: wrap;
     height: 100px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 footer h2 {
-    display: inline-block;
     border-right: 3px solid cornflowerblue;
     margin-top: 30px;
     height: 35px;
     padding: 3px 7px;
+    margin-bottom: 0;
 }
 
 footer p {
-    display: inline-block;
     border-bottom: 3px solid cornflowerblue;
     margin-top: 30px;
     margin-left: 100px;
     height: 30px;
     padding-top: 5px;
+    margin-bottom: 0;
 }
 
 footer a {
-    display: inline-block;
     color: cornflowerblue;
     border-bottom: 3px solid cornflowerblue;
     text-decoration: none;
@@ -163,4 +195,58 @@ footer a {
     margin-left: 300px;
     height: 30px;
     padding-top: 5px;
+    margin-bottom: 0;
 }
+
+@media  screen and (max-width: 980px) {
+    footer p {
+        margin-left: 50px;
+    }
+
+    footer a {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        margin-left: 15px;
+    }
+
+    footer p {
+        margin-left: 25px;
+    }
+
+    footer a {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        padding: 10px;
+        padding-left: 0;
+    }
+
+    .intro h1 {
+        height: 50%;
+        font-size: 18px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+    }
+    
+    footer h2 {
+        padding: 3px;
+    }
+
+    footer p {
+        margin-left: 15px;
+    }
+
+    footer a {
+        margin-left: 20px;
+    }
+}
+
